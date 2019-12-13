@@ -1,18 +1,33 @@
 {
-  "name": "bio-pathways",
+  "name": "@biopolymer-elements/bio-pathways",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pathways related components",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mark Fortner, Ishan Subedi",
+  "license": "BSD-3-Clause",
   "dependencies": {
+    "@biopolymer-elements/bio-link": "^1.0.1",
     "@bit/marko-ignjatovic.biopolymer.bio-link": "^1.0.2",
     "@polymer/paper-item": "^3.0.1",
     "@polymer/paper-listbox": "^3.0.1",
     "@polymer/paper-styles": "^3.0.1",
     "@polymer/polymer": "^3.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioPolymer/bio-pathways.git"
+  },
+  "keywords": [
+    "bio",
+    "pathways",
+    "biopolymer"
+  ],
+  "bugs": {
+    "url": "https://github.com/BioPolymer/bio-pathways/issues"
+  },
+  "homepage": "https://github.com/BioPolymer/bio-pathways#readme"
 }

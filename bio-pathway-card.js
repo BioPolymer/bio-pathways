@@ -2,7 +2,7 @@ import { PolymerElement, html } from "@polymer/polymer/polymer-element.js";
 import "@polymer/paper-listbox/paper-listbox";
 import "@polymer/paper-item/paper-item";
 import "@polymer/paper-styles/paper-styles";
-import "@bit/marko-ignjatovic.biopolymer.bio-link/bio-link/bio-link-mixin";
+import "@biopolymer-elements/bio-link/bio-link-mixin";
 
 /**
  * `bio-pathway-card`
