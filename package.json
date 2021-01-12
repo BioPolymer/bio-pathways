@@ -10,7 +10,6 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@biopolymer-elements/bio-link": "^1.0.1",
-    "@bit/marko-ignjatovic.biopolymer.bio-link": "^1.0.2",
     "@polymer/paper-item": "^3.0.1",
     "@polymer/paper-listbox": "^3.0.1",
     "@polymer/paper-styles": "^3.0.1",
