@@ -2,7 +2,7 @@ import { PolymerElement, html } from "@polymer/polymer/polymer-element.js";
 import "@polymer/paper-listbox/paper-listbox";
 import "@polymer/paper-item/paper-item";
 import "@polymer/paper-styles/paper-styles";
-import "@biopolymer-elements/bio-link/bio-link-mixin";
+import { BioLinkMixin } from "@biopolymer-elements/bio-link/bio-link-mixin";
 
 /**
  * `bio-pathway-card`
@@ -12,38 +12,38 @@ import "@biopolymer-elements/bio-link/bio-link-mixin";
  * @demo
  *
  */
-class BioPathwayCard extends PolymerElement {
+class BioPathwayCard extends BioLinkMixin(PolymerElement) {
   static get properties() {
     return {
       /** The name of the pathway database. */
       type: {
         type: String,
-        value: ""
+        value: "",
       },
 
       /** The user-friendly name of the database. */
       name: {
         type: String,
-        computed: "__computeName(type, databases)"
+        computed: "__computeName(type, databases)",
       },
 
       /** A map of database names and user-friendly names. */
       databases: {
         type: Map,
-        value: null
+        value: null,
       },
 
       /** An array of pathway items containing an id and a name. */
       model: {
         type: Array,
-        value: []
+        value: [],
       },
 
       /** A normalised model containing an Array<Object> where each object is the id, and name of the pathway. */
       __model: {
         type: Array,
-        computed: "__computeModel(model)"
-      }
+        computed: "__computeModel(model)",
+      },
     };
   }
 
