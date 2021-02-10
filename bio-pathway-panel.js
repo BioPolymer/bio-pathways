@@ -69,8 +69,10 @@ class BioPathwaysPanel extends PolymerElement {
           @apply --layout-horizontal;
           @apply --layout-wrap;
         }
+
         bio-pathway-card {
           margin-top: 5px;
+          width: 100%;
         }
       </style>
 
